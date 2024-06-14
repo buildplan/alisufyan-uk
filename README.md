@@ -4,8 +4,7 @@
 
 Credits:
 
-AJ
-aj@lkn.io | @ajlkn
+	aj@lkn.io | @ajlkn
 
 	Background Image:
 		Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
