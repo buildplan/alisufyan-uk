@@ -3,19 +3,48 @@
 	<head>
 		<title>Ali Sufyan</title>
 		<meta charset="UTF-8" />
-                
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="assets/favicon/site.webmanifest">
-		<link rel="shortcut icon" href="assets/favicon/favicon.ico">
-        
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Ali Sufyan - Construction Planner in London" />
 		<meta name="author" content="Ali Sufyan" />
 		<meta name="keywords" content="Construction Planner, London, Planning, Construction" />
+
+		<!-- Open Graph Metadata for Social Sharing -->
+		<meta property="og:title" content="Ali Sufyan - Construction Planner in London" />
+		<meta property="og:description" content="Ali Sufyan - London-based Construction Planner, offering expert planning services." />
+		<meta property="og:image" content="assets/images/og-image.jpg" />
+		<meta property="og:url" content="https://www.alisufyan.uk" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_GB" />
+
+		<!-- Twitter Card Metadata for Social Sharing -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Ali Sufyan - Construction Planner in London" />
+		<meta name="twitter:description" content="Construction planning expertise by Ali Sufyan, based in London." />
+		<meta name="twitter:image" content="assets/images/twitter-image.jpg" />
+		<meta name="twitter:site" content="@_AliSufyan" />
+		<meta name="twitter:creator" content="@_AliSufyan" />
+
+		<!-- Favicon Optimization with srcset -->
+		<link rel="icon" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+		<link rel="icon" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
+		<link rel="icon" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
+		<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" sizes="180x180" />
+		<link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+		<!-- Optimize Background Image with srcset -->
+		<style>
+			#bg {
+				background-image: url('assets/images/bg-lowres.jpg');
+				background-size: cover;
+			}
+			@media (min-width: 768px) {
+				#bg {
+					background-image: url('assets/images/bg-highres.jpg');
+				}
+			}
+		</style>
+
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -31,22 +60,24 @@
 					<p>Construction Planner &nbsp;&bull;&nbsp; London &nbsp;&bull;&nbsp; Winging It!</p>
 					<nav>
 						<ul>
-							<li><a href="https://www.linkedin.com/in/alisufyan/" class="fa-brands fa-linkedin" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://x.com/_AliSufyan" class="fa-brands fa-square-x-twitter" aria-label="X formerly Twitter" rel="noopener noreferrer" target="_blank"><span class="label">X</span></a></li>
-							<li><a rel="me" href="https://mastodon.social/@alisufyan" class="fa-brands fa-mastodon" aria-label="manstodon.social" rel="noopener noreferrer" target="_blank"><span class="label">Mastodon</span></a></li>
-							<li><a href="mailto:hi@mail.alisufyan.uk" class="fa-solid fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
-							<li><a href="https://planning.construction" class="fa-solid fa-globe" aria-label="Website" target="_blank"><span class="label">Website</span></a></li>
+							<li><a href="https://www.linkedin.com/in/alisufyan/" class="fa-brands fa-linkedin" aria-label="LinkedIn Profile" rel="noopener noreferrer" target="_blank"><span class="sr-only">LinkedIn</span></a></li>
+							<li><a href="https://x.com/_AliSufyan" class="fa-brands fa-square-x-twitter" aria-label="X (formerly Twitter) Profile" rel="noopener noreferrer" target="_blank"><span class="sr-only">X (formerly Twitter)</span></a></li>
+							<li><a rel="me" href="https://mastodon.social/@alisufyan" class="fa-brands fa-mastodon" aria-label="Mastodon Profile" rel="noopener noreferrer" target="_blank"><span class="sr-only">Mastodon</span></a></li>
+							<li><a href="mailto:hi@mail.alisufyan.uk" class="fa-solid fa-envelope" aria-label="Send an Email"><span class="sr-only">Email</span></a></li>
+							<li><a href="https://planning.construction" class="fa-solid fa-globe" aria-label="Visit Website" target="_blank"><span class="sr-only">Website</span></a></li>
 						</ul>
 					</nav>
 				</header>
 
 				<!-- Footer -->
 				<footer id="footer">
-					<span class="copyright">&copy; <span id="currentYear"></span> <a href="mailto:hi@alisufyan.uk" aria-label="Email Ali Sufyan">Ali Sufyan</a></span>
+					<span class="copyright">&copy; <span id="currentYear"></span> <a href="mailto:hi@mail.alisufyan.uk" aria-label="Email Ali Sufyan">Ali Sufyan</a></span>
 				</footer>
 			</div>
 		</div>
-		<script>
+
+		<!-- Scripts -->
+		<script defer>
 			document.getElementById('currentYear').textContent = new Date().getFullYear();
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
